@@ -85,7 +85,7 @@ def render_preview_table(objects_map):
                     "Filters": len(obj.get("ObjectsMapFilter", [])),
                 })
             
-            st.dataframe(preview_data, width='stretch')
+            st.dataframe(preview_data, use_container_width=True)
         else:
             st.warning("No ObjectMap found in JSON")
 
