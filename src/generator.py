@@ -105,7 +105,7 @@ class MappingSpreadsheetGenerator:
         for idx, obj_map in enumerate(objects_map, 1):
             source_system = obj_map.get("SourceSystemName", "N/A")
             target_system = obj_map.get("TargetSystemName", "N/A")
-            trigger_type = "Collect & Move"
+            trigger_type = "Collect & Move? / Collect?"
             
             row_data = [
                 idx, trigger_type, "at 00:00 AM", "every ?", obj_map.get("Name", "N/A"),
