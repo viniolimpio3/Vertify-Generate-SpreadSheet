@@ -115,7 +115,7 @@ def generate_and_download(json_data, uploaded_file):
                 data=excel_bytes,
                 file_name=output_filename,
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                width='stretch'
+                use_container_width=True
             )
             
         except Exception as e:
